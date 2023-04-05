@@ -22,7 +22,7 @@ public class Navigation {
             case STUDENT:
                 initUI("StudentForm.fxml");
                 break;
-            case ROOMS:
+            case ROOM:
                 initUI("RoomsForm.fxml");
                 break;
             case RESERVATION:
