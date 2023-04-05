@@ -7,9 +7,9 @@ import java.util.List;
 @Table(name = "Student")
 public class Student {
     @Id
-    @Column(name = "stID",length = 25)
+    @Column(name = "student_id",length = 25)
     private String stId;
-    @Column(name = "stName")
+    @Column(name = "name")
     private String stName;
     @Column(name = "address")
     private String address;
