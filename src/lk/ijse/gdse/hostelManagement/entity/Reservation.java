@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "reservation")
 public class Reservation {
     @Id
-    @Column(name = "res_id",length = 25)
+    @Column(name = "resId",length = 25)
     private String resId;
 
     public Reservation() {
@@ -22,11 +22,11 @@ public class Reservation {
         this.status = status;
     }
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "stID")
     private Student student;
 
     @ManyToOne
-    @JoinColumn(name ="room_type_id")
+    @JoinColumn(name ="roomID")
     private Room room;
 
     @Column(name = "status")

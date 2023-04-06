@@ -7,7 +7,7 @@ import java.util.List;
 @Table(name = "Room")
 public class Room {
     @Id
-    @Column(name = "room_type_id",length = 25)
+    @Column(name = "roomID",length = 25)
     private String roomId;
     @Column(name = "type")
     private String type;
@@ -32,7 +32,7 @@ public class Room {
                 '}';
     }
 
-    @Column(name = "key_money")
+    @Column(name = "keyMoney")
     private String keyMoney;
     @Column(name = "qty")
     private int qty;
