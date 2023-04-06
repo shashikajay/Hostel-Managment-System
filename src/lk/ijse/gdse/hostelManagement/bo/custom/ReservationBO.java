@@ -1,4 +1,6 @@
 package lk.ijse.gdse.hostelManagement.bo.custom;
 
-public interface ReservationBO {
+import lk.ijse.gdse.hostelManagement.bo.SuperBO;
+
+public interface ReservationBO extends SuperBO {
 }

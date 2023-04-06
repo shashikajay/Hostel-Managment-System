@@ -1,4 +1,6 @@
 package lk.ijse.gdse.hostelManagement.dao.custom;
 
-public interface QueryDAO {
+import lk.ijse.gdse.hostelManagement.dao.SuperDAO;
+
+public interface QueryDAO extends SuperDAO {
 }

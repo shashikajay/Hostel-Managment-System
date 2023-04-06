@@ -1,4 +1,6 @@
 package lk.ijse.gdse.hostelManagement.bo.custom.impl;
 
-public class UserBOImpl {
+import lk.ijse.gdse.hostelManagement.bo.custom.UserBO;
+
+public class UserBOImpl implements UserBO {
 }

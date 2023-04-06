@@ -1,14 +1,14 @@
 package lk.ijse.gdse.hostelManagement.bo.custom.impl;
 
-import lk.ijse.hostel.bo.custom.RoomBO;
-import lk.ijse.hostel.dao.DAOFactory;
-import lk.ijse.hostel.dao.custom.RoomDAO;
-import lk.ijse.hostel.dao.custom.StudentDAO;
-import lk.ijse.hostel.dto.RoomDTO;
-import lk.ijse.hostel.dto.StudentDTO;
-import lk.ijse.hostel.entity.Room;
-import lk.ijse.hostel.entity.Student;
-import lk.ijse.hostel.util.SessionFactoryConfig;
+import lk.ijse.gdse.hostelManagement.bo.custom.RoomBO;
+import lk.ijse.gdse.hostelManagement.dao.DAOFactory;
+import lk.ijse.gdse.hostelManagement.dao.custom.RoomDAO;
+import lk.ijse.gdse.hostelManagement.dao.custom.StudentDAO;
+import lk.ijse.gdse.hostelManagement.dto.RoomDTO;
+import lk.ijse.gdse.hostelManagement.dto.StudentDTO;
+import lk.ijse.gdse.hostelManagement.entity.Room;
+import lk.ijse.gdse.hostelManagement.entity.Student;
+import lk.ijse.gdse.hostelManagement.util.SessionFactoryConfig;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
