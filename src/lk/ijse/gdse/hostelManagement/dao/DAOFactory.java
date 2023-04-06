@@ -1,15 +1,15 @@
 package lk.ijse.gdse.hostelManagement.dao;
 
 import lk.ijse.gdse.hostelManagement.bo.BOFactory;
-import lk.ijse.hostel.bo.SuperBO;
-import lk.ijse.hostel.bo.custom.impl.RevervationBOImpl;
-import lk.ijse.hostel.bo.custom.impl.RoomBOImpl;
-import lk.ijse.hostel.bo.custom.impl.StudentBOImpl;
-import lk.ijse.hostel.bo.custom.impl.UserBOImpl;
-import lk.ijse.hostel.dao.custom.impl.RevervationDAOImpl;
-import lk.ijse.hostel.dao.custom.impl.RoomDAOImpl;
-import lk.ijse.hostel.dao.custom.impl.StudentDAOImpl;
-import lk.ijse.hostel.dao.custom.impl.UserDAOImpl;
+import lk.ijse.gdse.hostelManagement.bo.SuperBO;
+import lk.ijse.gdse.hostelManagement.bo.custom.impl.ReservationBOImpl;
+import lk.ijse.gdse.hostelManagement.bo.custom.impl.RoomBOImpl;
+import lk.ijse.gdse.hostelManagement.bo.custom.impl.StudentBOImpl;
+import lk.ijse.gdse.hostelManagement.bo.custom.impl.UserBOImpl;
+import lk.ijse.gdse.hostelManagement.dao.custom.impl.ReservationDAOImpl;
+import lk.ijse.gdse.hostelManagement.dao.custom.impl.RoomDAOImpl;
+import lk.ijse.gdse.hostelManagement.dao.custom.impl.StudenDAOImpl;
+import lk.ijse.gdse.hostelManagement.dao.custom.impl.UserDAOImpl;
 
 public class DAOFactory {
     public static DAOFactory daoFactory;
@@ -30,11 +30,11 @@ public class DAOFactory {
     public SuperDAO getDAO(DAOTypes daoTypes){
         switch (daoTypes){
             case STUDENT:
-                return new StudentDAOImpl ();
+                return new StudenDAOImpl ();
             case ROOM:
                 return new RoomDAOImpl ();
             case RESERVATION:
-                return new RevervationDAOImpl ();
+                return new ReservationDAOImpl ();
             case USER:
                 return new UserDAOImpl ();
             default:
