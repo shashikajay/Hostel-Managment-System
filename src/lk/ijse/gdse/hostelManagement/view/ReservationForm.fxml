@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.gdse.hostelManagement.controller.ReservationFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="723.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostelManagement.controller.ReservationFormController">
+   <children>
+      <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation Area" underline="true">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="298.0" layoutY="125.0" prefHeight="25.0" prefWidth="185.0" />
+      <Text layoutX="298.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="298.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="298.0" layoutY="213.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField layoutX="531.0" layoutY="125.0" prefHeight="25.0" prefWidth="185.0" />
+      <Text layoutX="531.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="531.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox layoutX="531.0" layoutY="212.0" prefWidth="150.0" />
+      <TableView editable="true" layoutX="134.0" layoutY="385.0" prefHeight="338.0" prefWidth="906.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="385.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ChoiceBox layoutX="66.0" layoutY="124.0" prefHeight="28.0" prefWidth="129.0" />
+      <ChoiceBox layoutX="66.0" layoutY="212.0" prefWidth="150.0" />
+      <Text layoutX="766.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="766.0" layoutY="125.0" prefHeight="26.0" prefWidth="54.0" />
+      <RadioButton layoutX="66.0" layoutY="288.0" mnemonicParsing="false" text="Paid" />
+   </children>
 </AnchorPane>
