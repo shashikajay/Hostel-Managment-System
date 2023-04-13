@@ -6,7 +6,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="723.0" prefWidth="1244.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostelManagement.controller.MainFormController">
    <children>
       <AnchorPane layoutX="522.0" layoutY="262.0" prefHeight="723.0" prefWidth="338.0" styleClass="nav-form" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="906.0" AnchorPane.topAnchor="0.0">
@@ -21,10 +20,10 @@
                   <Font name="Verdana Italic" size="40.0" />
                </font>
             </Text>
-            <Button layoutX="73.0" layoutY="238.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Reservation" />
-            <Button layoutX="73.0" layoutY="320.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Student" />
-            <Button layoutX="73.0" layoutY="405.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Room" />
-            <Button layoutX="14.0" layoutY="665.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="136.0" styleClass="logout-btn" text="Logout">
+            <Button fx:id="resId" layoutX="73.0" layoutY="238.0" mnemonicParsing="false" onAction="#onActionRervation" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Reservation" />
+            <Button fx:id="stManageId" layoutX="73.0" layoutY="320.0" mnemonicParsing="false" onAction="#onActionStudent" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Student" />
+            <Button fx:id="roomId" layoutX="73.0" layoutY="405.0" mnemonicParsing="false" onAction="#onActionRoom" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Room" />
+            <Button layoutX="14.0" layoutY="665.0" mnemonicParsing="false" onAction="#onActionLogOut" prefHeight="0.0" prefWidth="136.0" styleClass="logout-btn" text="Logout">
                <stylesheets>
                   <URL value="@assets/MainForm.css" />
                   <URL value="@assets/Dashboard.css" />

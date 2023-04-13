@@ -16,17 +16,14 @@ public class Navigation {
         Stage window = (Stage) Navigation.pane.getScene().getWindow();
 
         switch (route){
-            case DASHBOARD:
-                initUI("DashboardForm.fxml");
-                break;
             case STUDENT:
-                initUI("StudentForm.fxml");
+                initUI("/lk/ijse/gdse/hostelManagement/view/StudentForm.fxml");
                 break;
             case ROOM:
-                initUI("RoomForm.fxml");
+                initUI("/lk/ijse/gdse/hostelManagement/view/RoomForm.fxml");
                 break;
             case RESERVATION:
-                initUI("ReservationForm.fxml");
+                initUI("/lk/ijse/gdse/hostelManagement/view/ReservationForm.fxml");
                 break;
             default:
                 new Alert(Alert.AlertType.ERROR,"No UI Found");
@@ -35,6 +32,6 @@ public class Navigation {
 
     private static void initUI(String location) throws IOException {
         Navigation.pane.getChildren().add(FXMLLoader.load(Navigation.class
-                .getResource("/lk/ijse/d24hostelsystem/view/" + location)));
+                .getResource("/lk/ijse/gdse/hostelManagement/view" + location)));
     }
 }
