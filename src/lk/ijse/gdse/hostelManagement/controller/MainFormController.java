@@ -24,6 +24,7 @@ public class MainFormController {
         Stage stage=new Stage();
         stage.setScene(new Scene(parent));
         stage.show();
+
     }
 
     public void onActionRervation(ActionEvent actionEvent) throws IOException {

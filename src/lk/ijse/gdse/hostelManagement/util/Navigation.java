@@ -25,6 +25,9 @@ public class Navigation {
             case RESERVATION:
                 initUI("/lk/ijse/gdse/hostelManagement/view/ReservationForm.fxml");
                 break;
+            case contextPane:
+                initUI("/lk/ijse/gdse/hostelManagement/view/MainForm.fxml");
+                break;
             default:
                 new Alert(Alert.AlertType.ERROR,"No UI Found");
         }
