@@ -20,9 +20,9 @@
                   <Font name="Verdana Italic" size="40.0" />
                </font>
             </Text>
-            <Button fx:id="resId" layoutX="73.0" layoutY="238.0" mnemonicParsing="false" onAction="#onActionRervation" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Reservation" />
-            <Button fx:id="stManageId" layoutX="73.0" layoutY="320.0" mnemonicParsing="false" onAction="#onActionStudent" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Student" />
-            <Button fx:id="roomId" layoutX="73.0" layoutY="405.0" mnemonicParsing="false" onAction="#onActionRoom" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Room" />
+            <Button fx:id="resId" layoutX="83.0" layoutY="391.0" mnemonicParsing="false" onAction="#onActionRervation" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Reservation" />
+            <Button fx:id="stManageId" layoutX="83.0" layoutY="233.0" mnemonicParsing="false" onAction="#onActionStudent" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Student" />
+            <Button fx:id="roomId" layoutX="83.0" layoutY="313.0" mnemonicParsing="false" onAction="#onActionRoom" prefHeight="49.0" prefWidth="193.0" styleClass="login-btn" stylesheets="@assets/MainForm.css" text="Manage Room" />
             <Button layoutX="14.0" layoutY="665.0" mnemonicParsing="false" onAction="#onActionLogOut" prefHeight="0.0" prefWidth="136.0" styleClass="logout-btn" text="Logout">
                <stylesheets>
                   <URL value="@assets/MainForm.css" />
