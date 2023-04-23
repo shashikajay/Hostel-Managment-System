@@ -16,6 +16,11 @@ public class RoomDAOImpl implements RoomDAO {
     }
 
     @Override
+    public List<String> roomIds() {
+        return null;
+    }
+
+    @Override
     public List<Room> loadAll() {
         String sqlQuery="From Room";
         Query query = session.createQuery(sqlQuery);

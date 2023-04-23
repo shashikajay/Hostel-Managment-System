@@ -3,10 +3,12 @@ package lk.ijse.gdse.hostelManagement.controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import lk.ijse.gdse.hostelManagement.bo.BOFactory;
 import lk.ijse.gdse.hostelManagement.bo.custom.ReservationBO;
 import lk.ijse.gdse.hostelManagement.dto.ReservationDTO;
@@ -27,6 +29,7 @@ public class ReservationFormController {
     public RadioButton rbnPayNow;
     public TextField txtResId;
     public ChoiceBox cmbStatus;
+    public AnchorPane contextPane;
     private ReservationBO resBO = (ReservationBO) BOFactory.getBO (BOFactory.BOTypes.RESERVATION);
 
     public void onActionSaveRes(ActionEvent actionEvent) {
@@ -93,7 +96,8 @@ public class ReservationFormController {
     public void onActionDeleteRes(ActionEvent actionEvent) {
 
     }
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    void initialize() {
         setIds ();
         setData();
         setStatus ();
@@ -117,12 +121,14 @@ public class ReservationFormController {
 
     public void setIds(){
         List<String> stIds=resBO.getStudentIds ();
-        ObservableList student = FXCollections.observableArrayList (stIds);
+        ObservableList<String> student = FXCollections.observableArrayList (stIds);
         cmbStId.setItems (student);
+        System.out.println(student);
 
         List<String> roomIds=resBO.getRoomIds ();
         ObservableList room = FXCollections.observableArrayList (roomIds);
         cmbRoomId.setItems (room);
+        System.out.println(room);
 
     }
 

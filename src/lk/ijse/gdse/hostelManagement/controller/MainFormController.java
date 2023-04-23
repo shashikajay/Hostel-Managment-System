@@ -29,6 +29,7 @@ public class MainFormController {
 
     public void onActionRervation(ActionEvent actionEvent) throws IOException {
         Navigation.navigate(Routes.RESERVATION,contextPane);
+
     }
 
     public void onActionStudent(ActionEvent actionEvent) throws IOException {

@@ -19,6 +19,9 @@ public class ReservationDTO {
     private RoomDTO roomDTO;
     private String status;
 
+    public ReservationDTO(String resId, String date, StudentDTO studentDTO, RoomDTO roomDTO, String status) {
+    }
+
     public String getResID() {
         return resID;
     }

@@ -1,0 +1,13 @@
+
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom right, #7b82ff, #620028);
+}
+.navi-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-style: 14px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER LEFT;
+
+}

@@ -9,7 +9,7 @@ public class Reservation {
     @Column(name = "resId",length = 25)
     private String resId;
 
-    public Reservation() {
+    public Reservation(String resID, java.util.Date date, Student student, Room room, String status) {
     }
     @Column(name = "date")
     private String Date;

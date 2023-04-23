@@ -10,8 +10,8 @@ import java.io.IOException;
 public class Navigation {
     private static AnchorPane pane;
 
-    public static void navigate(Routes route , AnchorPane pane) throws IOException {
-        Navigation.pane=pane;
+    public static void navigate(Routes route , AnchorPane contextPane) throws IOException {
+        Navigation.pane=contextPane;
         Navigation.pane.getChildren().clear();
         Stage window = (Stage) Navigation.pane.getScene().getWindow();
 
@@ -35,6 +35,6 @@ public class Navigation {
 
     private static void initUI(String location) throws IOException {
         Navigation.pane.getChildren().add(FXMLLoader.load(Navigation.class
-                .getResource("/lk/ijse/gdse/hostelManagement/view" + location)));
+                .getResource(location)));
     }
 }

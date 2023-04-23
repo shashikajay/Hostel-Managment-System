@@ -10,6 +10,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import lk.ijse.gdse.hostelManagement.bo.BOFactory;
 import lk.ijse.gdse.hostelManagement.bo.custom.RoomBO;
 import lk.ijse.gdse.hostelManagement.dto.RoomDTO;
@@ -28,6 +29,7 @@ public class RoomFormController implements Initializable {
     public TextField txtKeymoney;
     public TextField txtRoomId;
     public TextField txtRoomType;
+    public AnchorPane contextPane;
     private RoomBO roomBO = (RoomBO) BOFactory.getBO (BOFactory.BOTypes.ROOM);
 
     @Override
@@ -45,9 +47,13 @@ public class RoomFormController implements Initializable {
         );
 
         try {
+            boolean isSaved = roomBO.saveRoom (roomDTO);
 
-            List<RoomDTO> allRooms = roomBO.loadAll ();
-            for (RoomDTO r : allRooms) {
+            if (isSaved){
+                new Alert(Alert.AlertType.ERROR, "Saved").show ();
+            }
+            //List<RoomDTO> allRooms = roomBO.loadAll ();
+            /*for (RoomDTO r : allRooms) {
                 if (r.getRoomID ().equals (txtRoomId.getText ())) {
                     new Alert(Alert.AlertType.ERROR, "This ID Already Have").show ();
                     break;
@@ -58,7 +64,7 @@ public class RoomFormController implements Initializable {
                     clearData ();
                     loadAllRoom ();
                 }
-            }
+            }*/
         }catch (Exception e){
             e.printStackTrace ();
         }

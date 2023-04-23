@@ -1,0 +1,31 @@
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.close:hover{
+    -fx-background-color: #ff4d5f;
+
+}
+.login-btn{
+
+    -fx-background-color: linear-gradient(to bottom right, #b700ff, #0024ff);
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-font-size: "Arial";
+}
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #ff0000, #4400ff);
+}
+
+.logout-btn {
+
+    -fx-background-color: #00e1ff;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-font-size: "Arial";
+}

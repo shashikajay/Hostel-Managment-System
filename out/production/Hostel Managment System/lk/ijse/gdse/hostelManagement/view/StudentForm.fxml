@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="723.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostelManagement.controller.StudentFormController">
+<AnchorPane fx:id="contextPane" prefHeight="723.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostelManagement.controller.StudentFormController">
    <children>
       <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Manage" underline="true">
          <font>
@@ -52,7 +52,7 @@
       <TextField fx:id="txtstName" layoutX="228.0" layoutY="143.0" />
       <TextField fx:id="txtAdress" layoutX="553.0" layoutY="143.0" />
       <DatePicker fx:id="txtDate" layoutX="232.0" layoutY="226.0" />
-      <ChoiceBox fx:id="cmbGender" layoutX="554.0" layoutY="225.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="cmbGender" accessibleRole="CHECK_BOX" layoutX="554.0" layoutY="225.0" prefWidth="150.0" />
       <TableView fx:id="tblStudent" layoutX="370.0" layoutY="402.0" onMouseClicked="#OnActionMouseClicked" prefHeight="321.0" prefWidth="906.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="402.0">
         <columns>
           <TableColumn prefWidth="103.0" text="Res ID" />
